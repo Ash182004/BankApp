@@ -1,0 +1,30 @@
+<table>
+  <thead>
+    <tr>
+      <th>Transaction ID</th>
+      <th>Type</th>
+      <th>Amount</th>
+      <th>Account</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (tx of (pendingTransactions$ | async); track tx.transactionId) {
+      <tr>
+        <td>{{ tx.transactionId }}</td>
+        <td>{{ tx.type }}</td>
+        <td>{{ tx.amount }}</td>
+        <td>{{ tx.accountNumber }}</td>
+        <td>
+          <button (click)="approve(tx.transactionId)">Accept</button>
+          <button (click)="reject(tx.transactionId)">Reject</button>
+        </td>
+      </tr>
+    } @empty {
+      <tr>
+        <td colspan="5">No transactions found or data is loading...</td>
+      </tr>
+    }
+  </tbody>
+</table>

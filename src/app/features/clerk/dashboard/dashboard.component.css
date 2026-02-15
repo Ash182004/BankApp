@@ -1,0 +1,69 @@
+/* ===== PAGE BACKGROUND ===== */
+.dashboard-wrapper {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(120deg, #f3f4f7, #e6e9f0);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: #f4e7ec;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.hero .brand {
+  color: #8b0035;
+  font-weight: 600;
+}
+
+.hero p {
+  color: #555;
+  font-size: 15px;
+}
+
+/* ===== GRID ===== */
+.card-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD ===== */
+.card {
+  flex: 1;
+  min-width: 250px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Card title */
+.card h3 {
+  color: #8b0035;
+  margin-bottom: 8px;
+}
+
+/* Card description */
+.card p {
+  color: #555;
+  font-size: 14px;
+}

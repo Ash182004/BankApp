@@ -1,0 +1,19 @@
+nav {
+  background: #2c3e50;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  margin-right: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

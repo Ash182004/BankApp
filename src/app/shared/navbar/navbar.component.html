@@ -1,0 +1,15 @@
+<nav *ngIf="auth.isLoggedIn()">
+  <span class="logo">🏦 Bank App</span>
+
+  <div class="links">
+    <a *ngIf="role === 'CLERK'" routerLink="/clerk/dashboard">Dashboard</a>
+    <a *ngIf="role === 'CLERK'" routerLink="/clerk/deposit">Deposit</a>
+    <a *ngIf="role === 'CLERK'" routerLink="/clerk/withdraw">Withdraw</a>
+
+    <a *ngIf="role === 'MANAGER'" routerLink="/manager/dashboard">Dashboard</a>
+    <a *ngIf="role === 'MANAGER'" routerLink="/manager/approvals">Approvals</a>
+    <a *ngIf="role === 'MANAGER'" routerLink="/manager/create-account">Create Account</a>
+
+    <button (click)="logout()">Logout</button>
+  </div>
+</nav>

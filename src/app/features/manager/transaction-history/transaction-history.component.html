@@ -1,0 +1,46 @@
+<div class="history-container">
+
+  <div class="hero">
+    <h1><span class="brand">My-Bank</span> Transaction History</h1>
+    <p>View account transactions securely</p>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Enter Account Number"
+           [(ngModel)]="accountNumber">
+
+    <button (click)="load()">Load History</button>
+  </div>
+
+  <!-- Error message -->
+  <p class="error-msg" *ngIf="message">{{ message }}</p>
+
+  <!-- No transaction message -->
+  <p  class="no-data" *ngIf="isLoaded && transactions.length === 0 && !message">
+    No transactions yet
+  </p>
+
+  <!-- Table -->
+  <table *ngIf="transactions.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Status</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let t of transactions">
+        <td>{{ t.transactionId }}</td>
+        <td>{{ t.type }}</td>
+        <td>₹ {{ t.amount }}</td>
+        <td>{{ t.status }}</td>
+        <td>{{ t.createdAt | date:'short' }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

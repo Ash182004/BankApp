@@ -1,0 +1,85 @@
+/* Full page background */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #7b1fa2, #e91e63);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.login-card {
+  width: 350px;
+  padding: 30px 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Header */
+.login-header h2 {
+  margin: 0;
+  color: #7b1fa2;
+  font-weight: 600;
+}
+
+.login-header p {
+  margin: 5px 0 20px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Form fields */
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #e91e63;
+  box-shadow: 0 0 5px rgba(233,30,99,0.2);
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #e91e63;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background: #c2185b;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #999;
+}

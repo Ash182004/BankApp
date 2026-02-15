@@ -1,0 +1,51 @@
+<div class="create-account-container">
+
+  <div class="form-card">
+    <h2>Create Account</h2>
+
+    <form #accountForm="ngForm" (ngSubmit)="createAccount(accountForm)">
+
+      <input
+        type="text"
+        placeholder="Customer Name"
+        name="name"
+        [(ngModel)]="name"
+        required
+      />
+
+      <input
+        type="number"
+        placeholder="Initial Balance"
+        name="initialBalance"
+        [(ngModel)]="initialBalance"
+        required
+        min="1000"
+        #balanceRef="ngModel"
+      />
+
+      <!-- Validation Message -->
+      <small class="error-msg" *ngIf="balanceRef.errors?.['min'] && balanceRef.touched">
+        Amount must be greater than 1000
+      </small>
+
+      <button
+        type="submit"
+        [disabled]="accountForm.invalid || isLoading">
+        {{ isLoading ? 'Creating...' : 'Create Account' }}
+      </button>
+
+    </form>
+
+    <!-- Success -->
+    <p class="success-msg" *ngIf="successMessage && !isLoading">
+      {{ successMessage }}
+    </p>
+
+    <!-- Error -->
+    <p class="error-msg" *ngIf="errorMessage && !isLoading">
+      {{ errorMessage }}
+    </p>
+
+  </div>
+
+</div>

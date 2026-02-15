@@ -1,0 +1,61 @@
+<div class="page-wrapper">
+
+  <!-- HERO -->
+  <div class="hero-section">
+    <h1><span class="brand">My-Bank</span> Fund Transfer</h1>
+    <p>Send money securely between accounts with instant processing</p>
+  </div>
+
+  <!-- MAIN CARD -->
+  <div class="transfer-card">
+
+    <h2>Transfer Money</h2>
+
+    <form (ngSubmit)="onSubmit()">
+
+      <div class="form-group">
+        <label>From Account</label>
+        <input
+  type="text"
+  [(ngModel)]="fromAccountId"
+  name="fromAccountId"
+  placeholder="Enter sender account"
+  required>
+  </div>
+
+
+      <div class="form-group">
+        <label>To Account</label>
+        <input
+  type="text"
+  [(ngModel)]="toAccountId"
+  name="toAccountId"
+  placeholder="Enter receiver account"
+  required>
+
+      </div>
+
+      <div class="form-group">
+        <label>Amount</label>
+        <input
+          type="number"
+          [(ngModel)]="amount"
+          name="amount"
+          placeholder="Enter amount"
+          required>
+      </div>
+
+      <button type="submit" [disabled]="isLoading">
+        <span *ngIf="!isLoading">Transfer Now</span>
+        <span *ngIf="isLoading" class="loader"></span>
+      </button>
+
+    </form>
+
+    <!-- messages -->
+    <p class="success-msg" *ngIf="successMessage">{{ successMessage }}</p>
+    <p class="error-msg" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  </div>
+
+</div>

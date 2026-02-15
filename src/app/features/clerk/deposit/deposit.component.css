@@ -1,0 +1,90 @@
+/* Page background */
+.deposit-container {
+  min-height: 100vh;
+  background: #f4f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card */
+.deposit-card {
+  background: #ffffff;
+  width: 420px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.deposit-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #a0004d;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(160, 0, 77, 0.1);
+}
+
+/* Button */
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: #a0004d; /* Axis-style maroon */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary-btn:hover {
+  background: #7c003b;
+}
+
+/* Alerts */
+.alert {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.success {
+  background: #e6f7ee;
+  color: #0a7f42;
+}
+
+.error {
+  background: #fdeaea;
+  color: #c0392b;
+}

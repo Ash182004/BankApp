@@ -1,0 +1,77 @@
+.history-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+}
+
+.hero {
+  background: linear-gradient(135deg, #fbe4f0, #ffffff);
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 34px;
+}
+
+.brand {
+  color: #8b0033;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px 20px;
+  background: #8b0033;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #a1003d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #8b0033;
+  color: white;
+}
+
+.error-msg {
+  color: red;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.no-data {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #777;
+  text-align: center;
+}
