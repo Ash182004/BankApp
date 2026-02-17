@@ -1,3 +1,7 @@
+# Project Name
+
+BankApp - Final Project repository for GitHub UI and Git CLI tasks.
+
 # BankFrontend
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.

@@ -1,0 +1,18 @@
+curl -L -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer <YOUR_GITHUB_TOKEN>" \
+  "https://api.github.com/repos/<your-username>/mcino-Introduction-to-Git-and-GitHub/pulls/1"
+
+{
+  "number": 1,
+  "state": "open",
+  "head": {
+    "label": "<your-username>:bug-fix-revert",
+    "repo": {
+      "full_name": "<your-username>/mcino-Introduction-to-Git-and-GitHub",
+      "fork": true
+    }
+  },
+  "base": {
+    "ref": "main"
+  }
+}
